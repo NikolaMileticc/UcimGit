@@ -1,0 +1,16 @@
+name: sesija
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch: {}
+
+jobs:
+  hello:
+    name: Zdravo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kazi Zdravo
+        run: echo "Zdravo radi sesija"
