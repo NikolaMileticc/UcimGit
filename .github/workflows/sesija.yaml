@@ -19,8 +19,8 @@ jobs:
     name: Provera
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4.
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Install Node
         uses: actions/setup-node@v4
