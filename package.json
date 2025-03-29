@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "spellcheck": "cspell --show-suggestions --unique \"**/*\"",
+    "typecheck": "tsc --noEmit",
     "prepare": "husky"
   },
   "dependencies": {
@@ -22,6 +24,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cspell": "^8.18.1",
     "eslint": "^9",
     "eslint-config-next": "15.2.2",
     "husky": "^9.1.7",
