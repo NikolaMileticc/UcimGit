@@ -1,4 +1,4 @@
-name: sesija
+name: CI
 on:
   push:
     branches:
@@ -8,15 +8,8 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  hello:
-    name: Zdravo
-    runs-on: ubuntu-latest
-    steps:
-      - name: Kazi Zdravo
-        run: echo "Zdravo radi sesija"
-
-  provera:
-    name: Provera
+  validation:
+    name: Validation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
