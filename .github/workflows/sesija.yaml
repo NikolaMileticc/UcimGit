@@ -14,3 +14,21 @@ jobs:
     steps:
       - name: Kazi Zdravo
         run: echo "Zdravo radi sesija"
+
+  provera:
+    name: Provera
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4.
+
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Lint
+        run: npm run lint
