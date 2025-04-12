@@ -9,7 +9,8 @@
     "package.json",
     "package-lock.json",
     "./.husky",
-    "./.next"
+    "./.next",
+    "tsconfig.tsbuildinfo"
   ],
   "words": ["evenodd", "logomark"]
 }
