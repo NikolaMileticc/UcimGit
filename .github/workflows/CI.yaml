@@ -15,6 +15,7 @@ jobs:
       - name: Checkout
         with:
           fetch-depth: 0
+          presist-credentials: false
         uses: actions/checkout@v4
 
       - name: Install Node
