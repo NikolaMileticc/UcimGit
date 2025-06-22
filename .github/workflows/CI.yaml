@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
+        with:
+          fetch-depth: 0
         uses: actions/checkout@v4
 
       - name: Install Node
@@ -31,3 +33,9 @@ jobs:
 
       - name: spellcheck
         run: npm run spellcheck
+
+      - name: semantic-release
+        id: semantic-release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
