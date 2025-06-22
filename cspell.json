@@ -1,16 +1,20 @@
 {
   "version": "0.2",
-  "language": "en,en-GB",
+  "language": "en",
   "caseSensitive": false,
-  "import": [],
   "ignorePaths": [
-    "./dist/**",
-    "./node_modules/**",
+    "**/dist/**",
+    "**/node_modules/**",
     "package.json",
     "package-lock.json",
-    "./.husky",
-    "./.next",
-    "tsconfig.tsbuildinfo"
+    "**/.husky/**",
+    "**/.next/**",
+    "tsconfig.tsbuildinfo",
+    ".git/**",
+    "*.svg",
+    "*.png",
+    "*.jpg"
   ],
-  "words": ["evenodd", "logomark"]
+  "words": ["evenodd", "logomark", "Deka"],
+  "dictionaries": ["typescript", "node", "filetypes", "npm"]
 }
