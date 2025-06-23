@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          presist-credentials: false
-        uses: actions/checkout@v4
+          persist-credentials: false
 
       - name: Install Node
         uses: actions/setup-node@v4
